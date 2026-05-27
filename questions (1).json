@@ -1,0 +1,141 @@
+{
+  "History": [
+    {
+      "id": 0,
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "Operation Colussus was the First Airborne Operation of WW2",
+      "options": ["True", "False"],
+      "answer": "False"
+    },
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "In what year did the Graf Spee sink?",
+      "options": ["1939", "1940", "1941", "1942"],
+      "answer": "1939"
+    }
+  ],
+  "Geography": [
+    {
+      "id": 0,
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which country is home to the Baku Street Circuit?",
+      "options": ["Azerbaijan", "China", "Australia", "Japan"],
+      "answer": "Azerbaijan"
+    },
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Where is the Interlagos circuit?",
+      "options": ["Rio de Janeiro", "São Paulo", "Buenos Aires", "Brasília"],
+      "answer": "São Paulo"
+    }
+  ],
+  "Science": [
+    {
+      "id": 0,
+      "type": "fill_in_the_blank",
+      "difficulty": "medium",
+      "question": "The force that pushes cars to the ground for more grip is called ________.",
+      "answer": "Downforce"
+    },
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "The type of G forces that one feels while driving a car is",
+      "options": ["Lateral", "Transverse", "Vertical", "Positive"],
+      "answer": "Lateral"
+    }
+  ],
+  "Sports": [
+    {
+      "id": 0,
+      "type": "fill_in_the_blank",
+      "difficulty": "medium",
+      "question": "The famous 1970 world driver's champion was named ________.",
+      "answer": "Jochen Rindt"
+    },
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Who won the 1982 world driver's championship?",
+      "options": ["Nico Rosberg", "Keke Rosberg", "Nelson Piquet", "Alan Jones"],
+      "answer": "Keke Rosberg"
+    }
+  ],
+  "Movies/TV": [
+    {
+      "id": 0,
+      "type": "fill_in_the_blank",
+      "difficulty": "medium",
+      "question": "In the movie Rush (2013), which formula 1 driver drove for Hesketh",
+      "answer": "James Hunt"
+    },
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Who won the 1966 24 hours of Le Mans in the movie Ford vs Ferrari(2019)?",
+      "options": ["Ken Miles", "Bruce Mclaren", "Carol Shelby", "Phil Hill"],
+      "answer": "Bruce Mclaren"
+    }
+  ],
+  "Games": [
+    {
+      "id": 0,
+      "type": "fill_in_the_blank",
+      "difficulty": "medium",
+      "question": "Which tire compound in Gran Turismo 7 provides the most grip",
+      "answer": "soft"
+    },
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which game in the Legend of Zelda series allows you to play as Zelda",
+      "options": ["Spirit Tracks", "Triforce Heroes", "Link's Crossbow Training", "The Wand of Gamelon"],
+      "answer": "The Wand of Gamelon"
+    }
+  ],
+  "Music": [
+    {
+      "id": 0,
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Who wrote Because",
+      "options": ["The Beatles", "The Who", "The Cranberries", "The Cure"],
+      "answer": "The Beatles"
+    },
+    {
+      "id": 1,
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "The Beatles liked Winston Churchill",
+      "options": ["True", "False"],
+      "answer": "True"
+    }
+  ],
+  "????????": [ 
+    {
+      "id": 0,
+      "type": "fill_in_the_blank",
+      "difficulty": "medium",
+      "question": "Which team in formula 1 has become Audi in the 2026 season",
+      "answer": "Sauber"
+    },
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which formula 1 driver won the 2022 Britsh grand prix",
+      "options": ["Charles Leclerc", "Lewis Hamilton", "Max Verstappen", "Carlos Sainz"],
+      "answer": "Carlos Sainz"
+    }
+  ]
+}

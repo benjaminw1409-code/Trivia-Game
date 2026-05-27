@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title-screen">
+        <h1>Trivia Game</h1>
+        <div class="button-container">
+            <button id="startButton">Start</button>
+            <button id = "rulesButton">Rules</button>
+        </div>
+    </div>
+
+    <div id="rules-screen">
+        <h2>1)Game is divided into 3 rounds</h2>
+        <h2>2)Each round requires more points to progress and gives you less time</h2>
+        <h2>3)More points are given for answering faster</h2>
+        <h2>4)Answer the questions before time runs out</h2>
+        <button id = "doneButton">Done</button>
+    </div>
+
+    <div id="game-text-container" style="display: none;">
+        <h2 id="global-game-text"></h2>
+    </div>
+
+    <div id="wheel-screen">
+        <h1>Spin The Wheel</h1>
+        <img src="Drawing (1).png" class="wheel-image">
+        <div id="spinnerTriangle"></div>
+        <div class="button-wrapper">
+            <button id="spinButton">SPIN</button>
+            <button id="continueButton" style="display: none;">Continue</button>
+        </div>
+        <p id="output-area"></p>
+    </div>
+    <div id="mc-question-screen" style="display: none;">
+        <div class="question-container">
+            <h2 id="mcq-question-text"></h2>
+            <div id="answer-buttons-row1" class="btn-grid">
+                <button class="btn"><p id="a1OutputArea"></p></button>
+                <button class="btn"><p id="a2OutputArea"></p></button>
+            </div>
+            <div id="answer-buttons-row2" class="btn-grid">
+                <button class="btn"><p id="a3OutputArea"></p></button>
+                <button class="btn"><p id="a4OutputArea"></p></button>
+            </div>
+        </div>
+    </div>
+    <div id="tf-question-screen" style="display: none;">
+        <div class="question-container">
+            <h2 id="tf-question-text"></h2>
+            <div id="answer-buttons-row1" class="btn-grid">
+                <button class="btn"><p>True</p></button>
+                <button class="btn"><p>False</p></button>
+            </div>
+        </div>
+    </div>
+    <div id="fitb-question-screen" style="display: none;">
+        <div class="question-container">
+            <h2 id="fitb-question-text"></h2>
+            <form class="ans" id="fitb-form">
+                <input type="text" id="answer" name="answer" autocomplete="off"><br>
+            </form>
+        </div>
+    </div>
+    <div id="correct-answer-screen" style="display: none;">
+        <h2>Correct</h2>
+        <button class="nextQButton">Next Question</button>
+    </div>
+    <div id="incorrect-answer-screen" style="display: none;">
+        <h2>Incorrect</h2>
+        <h3 id="correct-answer-text"></h3>
+        <button class="nextQButton">Next Question</button>
+    </div>
+
+    <div id="judgement-screen">
+        <p id="judgement-text"></p>
+        <button id="nextRoundButton">Next</button>
+    </div>
+
+    <div id="game-won-screen">
+        <h1>You Win!</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
