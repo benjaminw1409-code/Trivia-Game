@@ -15,6 +15,29 @@
       "question": "In what year did the Graf Spee sink?",
       "options": ["1939", "1940", "1941", "1942"],
       "answer": "1939"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Who was the Prime Minister of Great Britain during most of the Irish Potato Famine?",
+      "options": ["Robert Peel", "Winston Churchill", "George Russell", "David Lloyd George"],
+      "answer": "Robert Peel"
+    },
+    {
+      "id": 3,
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "The treaty that ended World War I was the Treaty of Versailles.",
+      "options": ["True", "False"],
+      "answer": "True"
+    },
+    {
+      "id": 4,
+      "type": "fill_in_the_blank",
+      "difficulty": "hard",
+      "question": "The treaty that ended the Troubles was the ____ ______ agreement",
+      "answer": "Good Friday"
     }
   ],
   "Geography": [
@@ -33,6 +56,29 @@
       "question": "Where is the Interlagos circuit?",
       "options": ["Rio de Janeiro", "São Paulo", "Buenos Aires", "Brasília"],
       "answer": "São Paulo"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "In which country would you find the city of Spa-Francorchamps, namesake of the spa?",
+      "options": ["Germany", "Netherlands", "Belgium", "France"],
+      "answer": "Belgium"
+    },
+    {
+      "id": 3,
+      "type": "fill_in_the_blank",
+      "difficulty": "hard",
+      "question": "Which Australian city was the birthplace of mathmetician Terrance Tao and host of many historic Formula 1 races",
+      "answer": "Adelaide"
+    },
+    {
+      "id": 4,
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "The island off the coast of China located in South China Sea is territory of China.",
+      "options": ["True", "False"],
+      "answer": "False"
     }
   ],
   "Science": [
@@ -50,6 +96,29 @@
       "question": "The type of G forces that one feels while driving a car is",
       "options": ["Lateral", "Transverse", "Vertical", "Positive"],
       "answer": "Lateral"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What aerodynamic phenomenon occurs when a car follows closely behind another, reducing air resistance?",
+      "options": ["Slipstreaming", "Aquaplaning", "Torque vectoring", "Porpoising"],
+      "answer": "Slipstreaming"
+    },
+    {
+      "id": 3,
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Kinetic energy is the energy possessed by an object due to its motion.",
+      "options": ["True", "False"],
+      "answer": "True"
+    },
+    {
+      "id": 4,
+      "type": "fill_in_the_blank",
+      "difficulty": "medium",
+      "question": "The property of a conductor to oppose charges flowing through it is called __________",
+      "answer": "Inductance"
     }
   ],
   "Sports": [
@@ -67,6 +136,29 @@
       "question": "Who won the 1982 world driver's championship?",
       "options": ["Nico Rosberg", "Keke Rosberg", "Nelson Piquet", "Alan Jones"],
       "answer": "Keke Rosberg"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which driver holds the record for the most Formula 1 World Drivers' Championships in a row?",
+      "options": ["Lewis Hamilton", "Ayrton Senna", "Max Verstappen", "Michael Schumacher"],
+      "answer": "Michael Schumacher"
+    },
+    {
+      "id": 3,
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "The sport of golf traces its origins back to Ireland",
+      "options": ["True", "False"],
+      "answer": "False"
+    },
+    {
+      "id": 4,
+      "type": "fill_in_the_blank",
+      "difficulty": "medium",
+      "question": "This non-team sport that begins with a B allows its player to obtain a strike",
+      "answer": "Bowling"
     }
   ],
   "Movies/TV": [
@@ -84,6 +176,29 @@
       "question": "Who won the 1966 24 hours of Le Mans in the movie Ford vs Ferrari(2019)?",
       "options": ["Ken Miles", "Bruce Mclaren", "Carol Shelby", "Phil Hill"],
       "answer": "Bruce Mclaren"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which juror in the 1957 movie 12 Angry Men has tickets to a baseball game",
+      "options": ["Juror 3", "Juror 4", "Juror 7", "Juror 8"],
+      "answer": "Juror 7"
+    },
+    {
+      "id": 3,
+      "type": "fill_in_the_blank",
+      "difficulty": "medium",
+      "question": "The major metropolis where the Last of Us begins in earnest is ______",
+      "answer": "Boston"
+    },
+    {
+      "id": 4,
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "In the movie 'Saving Private Ryan', Tom Hanks plays a character named James Ryan.",
+      "options": ["True", "False"],
+      "answer": "False"
     }
   ],
   "Games": [
@@ -101,6 +216,29 @@
       "question": "Which game in the Legend of Zelda series allows you to play as Zelda",
       "options": ["Spirit Tracks", "Triforce Heroes", "Link's Crossbow Training", "The Wand of Gamelon"],
       "answer": "The Wand of Gamelon"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the best-selling video game of all time as of 2026?",
+      "options": ["Grand Theft Auto V", "Tetris", "Minecraft", "Wii Sports"],
+      "answer": "Minecraft"
+    },
+    {
+      "id": 3,
+      "type": "fill_in_the_blank",
+      "difficulty": "medium",
+      "question": "The classic board game where players buy, sell, and trade properties to bankrupt their opponents is called ________.",
+      "answer": "Monopoly"
+    },
+    {
+      "id": 4,
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "In chess, the Queen can move any number of squares diagonally, horizontally, or vertically.",
+      "options": ["True", "False"],
+      "answer": "True"
     }
   ],
   "Music": [
@@ -108,7 +246,7 @@
       "id": 0,
       "type": "multiple_choice",
       "difficulty": "medium",
-      "question": "Who wrote Because",
+      "question": "Who wrote the song: You Never Give me your Money",
       "options": ["The Beatles", "The Who", "The Cranberries", "The Cure"],
       "answer": "The Beatles"
     },
@@ -119,9 +257,32 @@
       "question": "The Beatles liked Winston Churchill",
       "options": ["True", "False"],
       "answer": "True"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What was the title of Judy Collin's fifth album",
+      "options": ["Fifth Album", "In my Life", "Wildflowers", "Judy Collins #3"],
+      "answer": "Fifth Album"
+    },
+    {
+      "id": 3,
+      "type": "fill_in_the_blank",
+      "difficulty": "easy",
+      "question": "Complete the lyric from the hit The Who song, The Kids are Alright. I don't mind _____ ____ dancing with my girl",
+      "answer": "Other guys"
+    },
+    {
+      "id": 4,
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "A typical bass guitar has 6 strings.",
+      "options": ["True", "False"],
+      "answer": "False"
     }
   ],
-  "????????": [ 
+  "????????": [
     {
       "id": 0,
       "type": "fill_in_the_blank",
@@ -136,6 +297,37 @@
       "question": "Which formula 1 driver won the 2022 Britsh grand prix",
       "options": ["Charles Leclerc", "Lewis Hamilton", "Max Verstappen", "Carlos Sainz"],
       "answer": "Carlos Sainz"
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Who was Lewis Hamilton's teammate at Mercedes in 2016?",
+      "options": ["Valtteri Bottas", "Nico Rosberg", "George Russell", "Jenson Button"],
+      "answer": "Nico Rosberg"
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which billionaire completed the first commercial spacewalk?",
+      "options": ["Elon Musk", "Jared Isaacman", "Jeff Bezos", "Richard Branson"],
+      "answer": "Jared Isaacman"
+    },
+    {
+      "id": 4,
+      "type": "fill_in_the_blank",
+      "difficulty": "easy",
+      "question": "The global event that Paris hosted in the summer of 2024 was the Olympic ________.",
+      "answer": "Games"
+    },
+    {
+      "id": 5,
+      "type": "true_false",
+      "difficulty": "medium",
+      "question": "NASA's Artemis program aims to land humans back on the Moon.",
+      "options": ["True", "False"],
+      "answer": "True"
     }
   ]
 }
