@@ -11,7 +11,7 @@ let pointsThreshold = [3000,5000,7000];
 let roundTimes = [15,10,5];
 let numQuestions = 10;
 
-
+// Initialize screens
 const titleScreen = document.getElementById('title-screen');
 const wheelScreen = document.getElementById('wheel-screen');
 const mcQuestionScreen = document.getElementById('mc-question-screen');
@@ -37,30 +37,30 @@ const fitbInput = document.getElementById('answer');
 const gameTextContainer = document.getElementById('game-text-container');
 const globalGameText = document.getElementById('global-game-text');
 
-// Initialize screens
+
 wheelScreen.style.display = 'none';
 
 async function getRandomQuestion(categoryName) {
     try {
+        //load json
         var response = await fetch('./questions (1).json');
         var data = await response.json();
         var categoryArray = data[categoryName];
-        
         if (!categoryArray) {
             console.error(`Category "${categoryName}" not found in JSON!`);
             return null;
         }
-
         var numQuestions = categoryArray.length;
+        //random index to select question
         var qId = Math.floor(Math.random() * numQuestions);
-
+        //loads array of questions in a category
         var questionArray = categoryArray[qId];
         if (!questionArray) {
             console.error("Question ID not found!");
             return null;
         }
-        
 
+        //returns array with question, answers, type based on selected question type
         if (questionArray.type === "multiple_choice") {
             return [
                 questionArray.question, 
@@ -87,11 +87,7 @@ async function displayQuestion(selectedCategory) {
     
     var qTypeQuestion = await getRandomQuestion(selectedCategory);
     
-    if (!qTypeQuestion){
-        tfQuestionScreen.style.display = 'block';
-        return;
-    }; 
-    
+    //obtains question type
     var qType = qTypeQuestion[qTypeQuestion.length - 1];
     currentType = qType;
     currentCorrectAnswer = qTypeQuestion[qTypeQuestion.length - 2];
@@ -153,14 +149,12 @@ function startQuestionTimer() {
     }
     timeLeft = maxTime;
 
-    // Clear any leftover timers just in case
     clearInterval(timerInterval);
 
-    // Decrement time every 1 second (1000 milliseconds)
     timerInterval = setInterval(() => {
         timeLeft--;
         updateUI();
-        // If time runs out, automatically mark it wrong
+        // If time runs out automatically mark it wrong
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             checkAnswer("");
@@ -175,12 +169,13 @@ function checkAnswer(selectedAnswer) {
     tfQuestionScreen.style.display = 'none';
     mcQuestionScreen.style.display = 'none';
     fitbQuestionScreen.style.display = 'none';
-
+    //assigns points based on time left
     if (selectedAnswer.toLowerCase() === currentCorrectAnswer.toLowerCase()) {
         currentPoints = currentPoints + Math.floor((1000) * (timeLeft / maxTime));
         updateUI();
         cAnswerScreen.style.display = 'block';
-    } else {
+    } 
+    else {
         var ansElement = document.getElementById('correct-answer-text');
         icAnswerScreen.style.display = 'block';
         ansElement.innerText = "You said: " + selectedAnswer + "\n\nCorrect Answer:" + " " + currentCorrectAnswer;
@@ -188,10 +183,12 @@ function checkAnswer(selectedAnswer) {
     
     timeLeft= maxTime;
     updateUI();
+    //clears input
     fitbInput.value = "";
 }
 
 function issueJudgement(){
+    //Judges whether player passes each round
     var judgementTextElement = document.getElementById('judgement-text');
 
     titleScreen.style.display = 'none';
@@ -224,6 +221,7 @@ function issueJudgement(){
 }
 
 function nextRound() {
+    //resets for each round
     roundNumber++;
     currentPoints = 0;
     maxTime = roundTimes[roundNumber - 1];
@@ -233,6 +231,7 @@ function nextRound() {
 }
 
 function newGame(){
+    //resets after each game
     titleScreen.style.display = 'block';
     rulesScreen.style.display = 'none';
     wheelScreen.style.display = 'none';
@@ -258,12 +257,14 @@ function newGame(){
 }
 
 function readRules() {
+    //displays rules
     titleScreen.style.display = 'none';
     rulesScreen.style.display = 'block';
     document.getElementById('doneButton').addEventListener('click', newGame);
 }
 
 function startGame() {
+    //resets after each question, checks if round is over
     if(qNumber > numQuestions - 1){
         issueJudgement();
         return;
@@ -286,20 +287,25 @@ function startGame() {
 function spinWheel(){
     //gameTextContainer.style.display = 'block';
     spinButton.addEventListener('click', () => {
-        const randomDuration = Math.random() * (7 - 3) + 3;
+        var randomDuration = Math.random() * (7 - 3) + 3;
         spinButton.disabled = true;
         wheelImage.style.setProperty('animation-duration', `${randomDuration}s`);
+
+        /*
         const minRotations = 5; 
         const maxRotations = 10;
-        const baseRotations = Math.floor(Math.random() * (maxRotations - minRotations + 1)) + minRotations;
+        */
+        var baseRotations = randomDuration;
 
         const categories = ["Music", "????????", "History", "Geography", "Science", "Sports", "Movies/TV", "Games"];
         
-        const selectedCategoryIndex = Math.floor(Math.random() * 8);
-        const stopAngle = selectedCategoryIndex * 360; 
-        const finalAngle = (baseRotations * 360) + 360 - stopAngle;
+        var selectedCategoryIndex = Math.random();
+        var selectedCategory = Math.floor(selectedCategoryIndex * 8);
+        var stopAngle = selectedCategoryIndex * 360; 
         
-        currentSelectedCategory = categories[selectedCategoryIndex];
+        var finalAngle = (Math.floor(baseRotations) * 360) + (360 - stopAngle);
+        
+        currentSelectedCategory = categories[selectedCategory];
         
         wheelImage.style.setProperty('--final-angle', `${finalAngle}deg`);
         
@@ -347,9 +353,7 @@ continueButton.addEventListener('click', () => {
     displayQuestion(currentSelectedCategory); 
 });
 
-// --- SET UP THE BUTTONS ONCE AT GAME LOAD ---
 
-// Handle clicks for all Multiple Choice options
 mcButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         const selectedAnswer = e.currentTarget.textContent.trim();
@@ -357,7 +361,6 @@ mcButtons.forEach(button => {
     });
 });
 
-// Handle clicks for all True/False options
 tfButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         const selectedAnswer = e.currentTarget.textContent.trim();
@@ -366,12 +369,7 @@ tfButtons.forEach(button => {
 });
 
 fitbForm.addEventListener('submit', (e) => {
-    // 1. Prevent the page from reloading
     e.preventDefault(); 
-    
-    // 2. Get the text the user typed, and trim extra spaces
-    const selectedAnswer = fitbInput.value.trim();
-    
-    // 3. Send it to your checkAnswer function
+    const selectedAnswer = fitbInput.value.trim();    
     checkAnswer(selectedAnswer);
 });
